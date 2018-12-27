@@ -95,3 +95,5 @@ for i in np.nditer(dd, op_flags=['readwrite'], order='F'):
     print(i)
     i[...] = i * 2
 print(dd)
+for i in dd.flat:
+    print(i)
